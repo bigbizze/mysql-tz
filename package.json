@@ -1,6 +1,6 @@
 {
   "name": "mysql-tz",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "convenience function for automatically getting correct timezone information for mysql & mariadb",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -14,7 +14,6 @@
     "preversion" : "yarn run lint",
     "version" : "yarn run format && git add -A src",
     "postversion" : "git push && git push --tags",
-    "postinstall": "tsc",
     "description": "convenience function for automatically getting correct timezone information for mysql & mariadb",
     "main": "lib/index.js",
     "types": "lib/index.d.ts"
@@ -24,12 +23,12 @@
   "author": "bigbizze",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.9.7"
+    "typescript": "4.7.4",
+    "eslint": "^8.5.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
-    "eslint": "^8.5.0",
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.7.4",
