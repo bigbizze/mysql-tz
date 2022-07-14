@@ -6,8 +6,8 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "format": "eslint -p tsconfig.json --fix",
-    "lint": "eslint -p tsconfig.json",
+    "format": "eslint --fix",
+    "lint": "eslint",
     "prepare" : "yarn build",
     "prepublishOnly" : "yarn run lint",
     "preversion" : "yarn run lint",
